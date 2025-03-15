@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon backend/Server1.js",
+    "dev": "set NODE_ENV=development && nodemon backend/Server1.js",
     "build": " npm install && npm install --prefix frontend && npm run build --prefix frontend",
-"start": "cross-env NODE_ENV=production node backend/Server1.js"
+ "start": "set NODE_ENV=production && node backend/Server1.js"
 
   },
   "keywords": [],
