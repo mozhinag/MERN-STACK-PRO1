@@ -1,6 +1,6 @@
 import {create} from 'zustand';
 
-export const useProductStore = create((set) => ({
+export const useProductStore  = create((set) => ({
     products:[],
     setProducts: (products) => set({products}),
     createProduct: async(newProduct) =>{
