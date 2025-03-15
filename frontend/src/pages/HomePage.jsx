@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Text, VStack, SimpleGrid} from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-import { useProductStore } from "../store/Product";
+import { useProductStore } from "../store/Prod";
 
 
 

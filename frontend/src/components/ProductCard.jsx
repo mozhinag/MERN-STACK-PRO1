@@ -22,7 +22,7 @@ import {
 } from "@chakra-ui/react";
 import { EditIcon, DeleteIcon } from "@chakra-ui/icons";
 
-import { useProductStore } from "../store/Product";
+import { useProductStore } from "../store/Prod";
 const ProductCard = ({ product }) => {
   const [updatedProduct, setUpdatedProduct] = useState(product);
 
