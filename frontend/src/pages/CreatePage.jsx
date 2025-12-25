@@ -2,7 +2,7 @@ import { useToast } from '@chakra-ui/react';
 import { Box,Button,Container, Heading, useColorModeValue, VStack, Input } from '@chakra-ui/react';
 import React, { useState } from 'react'
 import { useProductStore } from '../store/Product';
-import { set } from 'mongoose';
+
 
 function CreatePage() {
   const [newProduct, setNewProduct] = useState(
@@ -17,7 +17,7 @@ const {createProduct} = useProductStore()
 
     const handleAddProduct = async()=>{
     const {success,message} = await createProduct(newProduct)
-     
+
     if(!success){
       toast({
         title: 'Error',
@@ -44,7 +44,7 @@ const {createProduct} = useProductStore()
 
   return (
     <Container maxW={"container.sm"}>
-      <VStack spacing={8}> 
+      <VStack spacing={8}>
         <Heading as={"h1"} size={"2x1"} textAlign={"center"} mb={8}>
           Create New Product
         </Heading>
